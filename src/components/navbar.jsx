@@ -25,3 +25,5 @@ export function NavBar() {
         </BSNav>
     )
 }
+
+export default NavBar;
