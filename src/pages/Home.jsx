@@ -3,6 +3,10 @@ import { useState } from 'react';
 import CarouselImage from '../components/CarouselImage';
 import ItemCard from '../components/ItemCard';
 
+const mockDB = require('../mockDatabase.json');  // Test to demonstrate how to filter server json data to site content.
+
+console.log(mockDB["promotions"][0].content);  
+
 
 export function Home() {
 
@@ -45,8 +49,9 @@ export function Home() {
       {/* Filtering to have a flexbox that displays cards horizontally */}
       <br></br>
       <Row md="auto" className="d-flex justify-content-center">
-        <Col md="auto" className="d-flex justify-content-center"><ItemCard /></Col>
-        <Col className="d-flex justify-content-center"><ItemCard /></Col>
+        {/* Reference JSON data through props in the elements to populate site with JSON data.  Server passes */}
+        <Col md="auto" className="d-flex justify-content-center"><ItemCard content = {mockDB["promotions"][0].content} title={mockDB["promotions"][0].title} /></Col>
+        <Col className="d-flex justify-content-center"><ItemCard content = {mockDB["promotions"][1].content} title={mockDB["promotions"][1].title} /></Col>
         <Col className="d-flex justify-content-center"><ItemCard /></Col>
         <Col className="d-flex justify-content-center"><ItemCard /></Col>
       </Row>

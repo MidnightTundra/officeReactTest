@@ -1,0 +1,12 @@
+{
+    "promotions" : [
+        {
+            "content" : "Here's you lovely message",
+            "title" : "Super Title 1"
+        },
+        {
+            "content" : "Here's you lovely message Two",
+            "title" : "Super Title 2"
+        }
+    ]
+}
