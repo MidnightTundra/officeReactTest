@@ -1,12 +1,28 @@
 {
     "promotions" : [
         {
-            "content" : "Here's you lovely message",
-            "title" : "Super Title 1"
+            "content" : "Nvidia 4080 w/ AMD Ryzen 8900HX",
+            "title" : "MSI Medium Tower",
+            "price" : 2289.99,
+            "source" : "https://c1.neweggimages.com/ProductImageCompressAll300/83-151-298-08.png"
         },
         {
-            "content" : "Here's you lovely message Two",
-            "title" : "Super Title 2"
+            "content" : "Nvidia 4060 w/ Intel 13700HX",
+            "title" : "Legion Gaming PC",
+            "price" : 1889.99,
+            "source" : "https://c1.neweggimages.com/ProductImageCompressAll300/AZEBS2302020KJ4I860.jpg?ex=2"
+        },
+        {
+            "content" : "Nvidia 4060 w/ Intel 13700HX",
+            "title" : "ASUS Gaming PC",
+            "price" : 2689.99,
+            "source" : "https://c1.neweggimages.com/ProductImageCompressAll300/AZEBS2302020KJ4I860.jpg?ex=2"
+        },
+        {
+            "content" : "Nvidia 4070 w/ Intel 13700HX",
+            "title" : "ASUS Gaming PC",
+            "price" : 2689.99,
+            "source" : "https://c1.neweggimages.com/ProductImageCompressAll300/AZEBS2302020KJ4I860.jpg?ex=2"
         }
     ]
 }

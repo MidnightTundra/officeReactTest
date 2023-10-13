@@ -5,11 +5,11 @@ import ItemCard from '../components/ItemCard';
 
 const mockDB = require('../mockDatabase.json');  // Test to demonstrate how to filter server json data to site content.
 
-console.log(mockDB["promotions"][0].content);  
+console.log(mockDB["promotions"][0].content);
 
 
 export function Home() {
-
+  {/*State Manager for the promotional carousel for the front page. */}
   const [index, setIndex] = useState(0);
 
   const handleSelect = (selectedIndex) => {
@@ -49,11 +49,14 @@ export function Home() {
       {/* Filtering to have a flexbox that displays cards horizontally */}
       <br></br>
       <Row md="auto" className="d-flex justify-content-center">
+        {/*Creates item cards based on Database contect*/}
+        {Object.keys(mockDB["promotions"]).map((item, i) => (
+          <Col md="auto" className="d-flex justify-content-center">
+            <ItemCard price={mockDB["promotions"][i].price} source={mockDB["promotions"][i].source} content={mockDB["promotions"][i].content} title={mockDB["promotions"][i].title} />
+          </Col>
+        ))}
+
         {/* Reference JSON data through props in the elements to populate site with JSON data.  Server passes */}
-        <Col md="auto" className="d-flex justify-content-center"><ItemCard content = {mockDB["promotions"][0].content} title={mockDB["promotions"][0].title} /></Col>
-        <Col className="d-flex justify-content-center"><ItemCard content = {mockDB["promotions"][1].content} title={mockDB["promotions"][1].title} /></Col>
-        <Col className="d-flex justify-content-center"><ItemCard /></Col>
-        <Col className="d-flex justify-content-center"><ItemCard /></Col>
       </Row>
     </Container>
 

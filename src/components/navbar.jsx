@@ -10,6 +10,7 @@ export function NavBar() {
                     <Nav.Link to="/" as={NavLink}>Home</Nav.Link>
                     <Nav.Link to="/cart" as={NavLink}>Cart</Nav.Link>
                     <Nav.Link to="/store" as={NavLink}>Store</Nav.Link>
+                    <Nav.Link to="/account" as={NavLink}>Account</Nav.Link>
                 </Nav>
                 <Navbar.Brand href="/">React</Navbar.Brand>
                 <Button link = "/cart" style={{width: "3rem", height : "3rem" }} className="rounded-circle" variant="outline-primary">

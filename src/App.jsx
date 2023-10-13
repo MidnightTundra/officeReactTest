@@ -3,6 +3,8 @@ import {Container} from "react-bootstrap"
 import {Home} from "./pages/Home"
 import {Cart} from "./pages/Cart"
 import {Store} from "./pages/Store"
+import {Account} from './pages/Account'
+import {Item} from './pages/Item'
 import { NavBar } from "./components/navbar"
 
 //Routes in the
@@ -16,6 +18,7 @@ function App() {
         <Route path='/' element={<Home />}></Route>
         <Route path='/store' element={<Store />}></Route>
         <Route path='/cart' element={<Cart />}></Route>
+        <Route path='/account' element={<Account />} />
       </Routes>
     </Container>
     </>
