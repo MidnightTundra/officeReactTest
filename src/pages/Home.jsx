@@ -17,29 +17,29 @@ export function Home() {
   };
 
   return (
-    <Container fluid="md" className="justify-content-center align-items-center">
+    <Container fluid="md" md="auto" className="justify-content-center align-items-center">
       <Row md="auto">
         <Carousel fade activeIndex={index} onSelect={handleSelect}>
           <Carousel.Item>
-            <CarouselImage className="d-flex justify-content-center" source="https://media.istockphoto.com/id/1409236261/photo/healthy-food-healthy-eating-background-fruit-vegetable-berry-vegetarian-eating-superfood.webp?s=2048x2048&w=is&k=20&c=AOJUGUDXqr7aYJhvW4-6sf1vzaUmBO1q3bRE5HBcEVs=" text="First slide" />
+            <CarouselImage className="d-flex justify-content-center" source="https://i.pinimg.com/originals/60/a2/28/60a2285e52cb3323b80a56b0de38e0cc.jpg " text="First slide" />
             <Carousel.Caption>
-              <h3>An entire tropical selection</h3>
-              <p>Just for you</p>
+              <h3>MSI BRAND</h3>
+              <p>PC Gaming's Champion</p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
-            <CarouselImage source="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Culinary_fruits_front_view.jpg/1920px-Culinary_fruits_front_view.jpg" text="Second slide" />
+            <CarouselImage source="https://macplus.shop/wp-content/uploads/2021/03/Banner-Mac-4.jpg" text="Second slide" />
             <Carousel.Caption>
-              <h3>Enjoy our subscription of Essential Fruits</h3>
-              <p>$10.99 Every 30 days from activation**</p>
+              <h3>Apple</h3>
+              <p>Think Differently</p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
-            <CarouselImage source="https://media.istockphoto.com/id/1178343665/photo/mid-adult-man-cross-country-running.webp?s=2048x2048&w=is&k=20&c=I-WSEmzVfNCr1bvws-lsy6YitvSIUnqruhAjdZLXSXE=" text="Third slide" />
+            <CarouselImage source="https://en.shiftdelete.net/wp-content/uploads/2023/03/asus-unveils-exciting-rog-strix-scar-16-18-gaming-laptops-in-india-1.jpeg" text="Third slide" />
             <Carousel.Caption>
-              <h3>Third slide label</h3>
+              <h3>ASUS BRAND</h3>
               <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                The Republic of Gamers
               </p>
             </Carousel.Caption>
           </Carousel.Item>
@@ -47,6 +47,8 @@ export function Home() {
       </Row>
 
       {/* Filtering to have a flexbox that displays cards horizontally */}
+      <br></br>
+      <Row  md="auto" className="d-flex justify-content-center"><Col><h1>Featured Items</h1></Col></Row>
       <br></br>
       <Row md="auto" className="d-flex justify-content-center">
         {/*Creates item cards based on Database contect*/}

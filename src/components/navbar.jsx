@@ -1,8 +1,15 @@
 import { Button, Container, Nav, Navbar as BSNav, Navbar } from "react-bootstrap"
 import { NavLink } from "react-router-dom"
+import { useState } from "react";
+
 
 
 export function NavBar() {
+
+    const databaseCart = fetch("../mockDatabase.json").then(rep => {return rep.json().promotions});
+    
+    const [count, setCount] = useState();
+
     return (
         <BSNav className="bg-white shadow-sm mb-3">
             <Container>
@@ -19,7 +26,7 @@ export function NavBar() {
                     </svg>
                     <div id="itemCountCart" className="rounded-circle bg-danger d-flex justify-content-center align-items-center"
                     style = {{color:"white", transform:"translate(100%,25%)", }}>
-                        0
+                        {count}
                     </div>
                 </Button>
             </Container>

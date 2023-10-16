@@ -22,8 +22,8 @@ function ItemCard(props) {
           </div>
         </div>
         <div>
-          <Button style variant="primary"
-            onClick={handleAddToCart(props)}>Add Cart </Button>
+          <Button variant="primary"
+            >Add Cart </Button>
           <Button onClick={() => setCount(count + 1)}>+</Button>
           <p>{count}</p>
           <Button onClick={() => setCount(count - 1)}>-</Button>
