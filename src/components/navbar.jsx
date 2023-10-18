@@ -6,8 +6,9 @@ import { useState } from "react";
 
 export function NavBar() {
 
-    const databaseCart = fetch("../mockDatabase.json").then(rep => {return rep.json().promotions});
-    
+    fetch("../mockDatabase.json").then((rep) => rep.json()).then((data) => {
+        console.log(data);
+    });
     const [count, setCount] = useState();
 
     return (

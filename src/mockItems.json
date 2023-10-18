@@ -1,0 +1,27 @@
+{
+    "graphicsCards" : [
+        {
+            
+        }
+    ],
+    "smartHome" : [
+        {
+            "title" : "Apple HomePods",
+            "price" : 209.99,
+            "desc" : "This is an Apple product that produces sound. Idk On God",
+            "quantity" : 5,
+            "condition" : "New",
+            "images" : [
+                "https://cdn.thewirecutter.com/wp-content/media/2023/03/applehomepod-2048px-homepods-2x1-1.jpg?auto=webp&quality=75&crop=2:1&width=1024",
+                "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/homepod-select-202210_FMT_WHH?wid=640&hei=600&fmt=jpeg&qlt=90&.v=1670557209437",
+                "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/homepod-select-202210_FMT_WHH?wid=640&hei=600&fmt=jpeg&qlt=90&.v=1670557209437"
+            ],
+            "searchTags" : "Apple, HomePods, Speaker, System, Smart, Home"
+        }
+    ],
+    "Desktops" : [
+        {
+
+    }
+    ]
+}
