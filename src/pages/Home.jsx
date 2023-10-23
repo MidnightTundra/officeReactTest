@@ -1,9 +1,11 @@
 import { Carousel, Container, Row, Col } from "react-bootstrap";
 import { useState } from 'react';
-import CarouselImage from '../components/CarouselImage';
-import ItemCard from '../components/ItemCard';
+import CarouselImage from '../components/Items/CarouselImage';
+import ItemCard from '../components/Items/ItemCard';
 
-const mockDB = require('../mockDatabase.json');  // Test to demonstrate how to filter server json data to site content.
+  // Test to demonstrate how to filter server json data to site content.
+
+  const mockDB = (require('../mockDatabase.json'));
 
 
 
@@ -11,6 +13,7 @@ const mockDB = require('../mockDatabase.json');  // Test to demonstrate how to f
 export function Home() {
   {/*State Manager for the promotional carousel for the front page. */ }
   const [index, setIndex] = useState(0);
+
 
   const handleSelect = (selectedIndex) => {
     setIndex(selectedIndex);

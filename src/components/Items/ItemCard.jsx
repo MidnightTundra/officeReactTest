@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Row, Col, Container } from 'react-bootstrap';
-import { handleAddToCart } from '../scripts/cartController.js'
+import { handleAddToCart } from '../../scripts/cartController.js'
 
 function ItemCard(props) {
   const [count, setCount] = useState(1);
