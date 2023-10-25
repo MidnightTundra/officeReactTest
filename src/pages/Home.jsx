@@ -70,7 +70,7 @@ export function Home() {
         {/*Creates item cards based on Database contect*/}
         {Object.keys(mockDB["promotions"]).map((item, i) => (
           <Col md="auto" className="">
-            <ItemCard price={mockDB["promotions"][i].price} source={mockDB["promotions"][i].source} content={mockDB["promotions"][i].content} title={mockDB["promotions"][i].title} />
+            <ItemCard href="./product/" oid={mockDB["promotions"][i].oid} price={mockDB["promotions"][i].price} source={mockDB["promotions"][i].source} content={mockDB["promotions"][i].content} title={mockDB["promotions"][i].title} />
           </Col>
         ))}
 

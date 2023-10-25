@@ -6,7 +6,7 @@ import {Store} from "./pages/Store"
 import {Account} from './pages/Account'
 import {SignUp} from './pages/SignUp.jsx';
 import {Item} from './pages/Item'
-import { NavBar } from "./components/navbar"
+import { NavBar } from "./components/Navigation/navbar"
 
 //Routes in the
 function App() {

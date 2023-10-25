@@ -10,9 +10,9 @@ function ItemCard(props) {
   return (
     <Container fluid>
     <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={props.source} />
+      <Card.Img  href = {props.href + "oid=" + props.oid} variant="top" src={props.source} />
       <Card.Body>
-        <div style={{ minHeight: '150px' }}>
+        <div href = {props.href + "oid=" + props.oid} style={{ minHeight: '150px' }}>
           <div className='' style={{ minHeight: '20px' }}>
             <Card.Title>{props.title}</Card.Title>
             <Card.Subtitle>${props.price}</Card.Subtitle>
