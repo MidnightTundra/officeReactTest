@@ -7,6 +7,7 @@ import {Account} from './pages/Account'
 import {SignUp} from './pages/SignUp.jsx';
 import {Item} from './pages/Item'
 import { NavBar } from "./components/Navigation/navbar"
+import { Product } from "./pages/Product"
 
 //Routes in the
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path='/cart' element={<Cart />}></Route>
         <Route path='/account' element={<Account />} />
         <Route path='/signup' element={<SignUp />} />
+        <Route path="/product" element={<Product />} />
       </Routes>
     </Container>
     </>

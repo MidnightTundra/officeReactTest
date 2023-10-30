@@ -36,6 +36,7 @@ export function NavBar() {
                             <Nav.Link to="/cart" as={NavLink}>Cart</Nav.Link>
                             <Nav.Link to="/store" as={NavLink}>Store</Nav.Link>
                             <Nav.Link to="/account" as={NavLink}>Account</Nav.Link>
+                            <Nav.Link to="/product?id=1234567" as={NavLink}>Product</Nav.Link>
                         </Nav>
                     </Col>
                     <Col>

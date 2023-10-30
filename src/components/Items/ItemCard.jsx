@@ -14,7 +14,7 @@ function ItemCard(props) {
       <Card.Body>
         <div href = {props.href + "oid=" + props.oid} style={{ minHeight: '150px' }}>
           <div className='' style={{ minHeight: '20px' }}>
-            <Card.Title>{props.title}</Card.Title>
+            <Card.Title><a className='nav-link' href ={'/product?id=' + props.oid}>{props.title}</a></Card.Title>x
             <Card.Subtitle>${props.price}</Card.Subtitle>
           </div>
           <div style={{ minHeight: '40px' }}>
