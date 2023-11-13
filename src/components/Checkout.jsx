@@ -8,6 +8,7 @@ import {
   useStripe,
   useElements,
 } from "@stripe/react-stripe-js";
+const stripePromise = loadStripe('pk_test_51O7U7BH0RcyNpJtr2Qe54jJr0iVe4lOCrwwuI7LZWwoRYTmmoh2GpgFQyxleLjvnaZVXRdTBj6AeXSPDI6Uy85QN00HTJ6RyMc');
 
 const PaymentForm = () => {
   const stripe = useStripe();

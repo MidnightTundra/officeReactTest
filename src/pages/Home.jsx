@@ -3,9 +3,9 @@ import { useState } from 'react';
 import CarouselImage from '../components/Items/CarouselImage';
 import ItemCard from '../components/Items/ItemCard';
 
-  // Test to demonstrate how to filter server json data to site content.
+// Test to demonstrate how to filter server json data to site content.
 
-  const mockDB = (require('../mockDatabase.json'));
+const mockDB = (require('../mockDatabase.json'));
 
 
 
@@ -66,12 +66,14 @@ export function Home() {
       <br></br>
       <Row md="auto" className="d-flex justify-content-center"><Col><h1>Featured Items</h1></Col></Row>
       <br></br>
-      <Row className="d-inline-flex p-2">
+      <Row className="d-inline-flex p-2 justify-content-center">
         {/*Creates item cards based on Database contect*/}
         {Object.keys(mockDB["promotions"]).map((item, i) => (
-          <Col md="auto" className="">
-            <ItemCard href="./product/" oid={mockDB["promotions"][i].oid} price={mockDB["promotions"][i].price} source={mockDB["promotions"][i].source} content={mockDB["promotions"][i].content} title={mockDB["promotions"][i].title} />
-          </Col>
+            Array.from({ length: 4 }).map((_, idx) => (
+              <Col key={idx} md="auto" className="">
+                <ItemCard href="./product/" oid={mockDB["promotions"][i].oid} price={mockDB["promotions"][i].price} source={mockDB["promotions"][i].source} content={mockDB["promotions"][i].content} title={mockDB["promotions"][i].title} />
+              </Col>
+            ))
         ))}
 
         {/* Reference JSON data through props in the elements to populate site with JSON data.  Server passes */}

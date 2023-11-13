@@ -8,7 +8,7 @@ function ItemCard(props) {
   const [count, setCount] = useState(1);
 
   return (
-    <Container fluid>
+    <Container fluid className='p-2 test'>
     <Card style={{ width: '18rem' }}>
       <Card.Img  href = {props.href + "oid=" + props.oid} variant="top" src={props.source} />
       <Card.Body>
