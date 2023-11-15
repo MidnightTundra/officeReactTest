@@ -21,8 +21,8 @@ async function pullProductData(req) {
 
 export const FullItem = (props) => {
 
-    console.log(window.location.href);
-    const item = pullProductData(window.location.href);
+    console.log(window.location.search);
+    const item = pullProductData(`${import.meta.env.VITE_API_URL}/items/findid${window.location.search}`);
 
     const objectID = props.oid;
 
@@ -35,7 +35,10 @@ export const FullItem = (props) => {
     return (
         <Container>
             <Row>
-                <h1>{props.title}</h1>
+                <h1>{item.title}</h1>
+            </Row>
+            <Row>
+                <Col><img></img></Col>
             </Row>
         </Container>
     );
